@@ -1,12 +1,12 @@
-package com.simon.mynewproject.ui.activity;
+package com.simon.improject.ui.activity;
 
-import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import java.util.List;
+import butterknife.ButterKnife;
 
 /**
  * activity基类
@@ -16,18 +16,21 @@ import java.util.List;
 public abstract class BaseActivity extends AppCompatActivity{
 
 
+
+    protected Context mContext;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        setContentView(getLayoutId());
-        initView();
-        initListener();
-        initData();
     }
+
+
+
 
     @Override
     protected void onStart() {
         super.onStart();
+
     }
 
     @Override
@@ -56,7 +59,7 @@ public abstract class BaseActivity extends AppCompatActivity{
     }
 
 
-    public abstract int getLayoutId();//加载布局
+
 
     public abstract void initView();//初始化控件
 

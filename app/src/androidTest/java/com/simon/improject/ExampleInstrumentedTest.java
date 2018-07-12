@@ -1,4 +1,4 @@
-package com.simon.mynewproject;
+package com.simon.improject;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

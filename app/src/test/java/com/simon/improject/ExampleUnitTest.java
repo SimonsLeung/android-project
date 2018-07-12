@@ -1,4 +1,4 @@
-package com.simon.mynewproject;
+package com.simon.improject;
 
 import org.junit.Test;
 
